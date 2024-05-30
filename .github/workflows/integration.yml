@@ -1,0 +1,13 @@
+name: Despliegue de Actions en Pages
+on: push
+jobs:
+    Crear-Proyecto:
+        name: Actions 2 Pages
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hacer checkout
+              uses: actions/checkout@v4
+            - name: Instalar dependencias
+              run: npm install
+            - name: Crear proyecto en produccion
+              run: npm run build
