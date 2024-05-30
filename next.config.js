@@ -1,6 +1,7 @@
 module.exports = {
-  reactStrictMode: true,
-  trailingSlash: true,
+  output: "export",
+  reactStrictMode: false,
+  trailingSlash: false,
   exportPathMap: function () {
       return {
           '/': { page: '/' }
